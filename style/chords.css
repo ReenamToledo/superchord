@@ -1,0 +1,84 @@
+/* TAGS */
+body {
+    margin: 0;
+    min-height: 97vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+h1, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    margin: 0;
+}
+
+pre {
+    font-family: sans-serif;
+}
+
+p, b {
+    padding-left: 10px;
+    margin: 0;
+}
+
+b {
+    color: blue;
+}
+
+
+
+
+
+/* CLASSES */
+
+/*A seguir temos o nosso background de vídeo*/
+/*Aqui temos o background de vídeo*/
+.wallpaper {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+    /* z-index faz com que a posição do item seja abaixo de todos os outros */
+}
+/*Aqui temos o background de vídeo*/
+
+.title {
+    color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 1%; left: 1%;
+    pointer-events: none;
+    /*Em "none", faz com que hovers funcionem
+    normalmente sem serem atrapalhados por uma caixa invisível*/
+}
+
+.title img {
+    width: 90px; height: 90px;
+}
+
+.chord {
+    margin: 20px 0;
+    width: 47%;
+    position: static;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.music_name {
+    padding-left: 10px;
+}
+
+.singer_name {
+    color: blue;
+    text-decoration: underline;
+    padding-left: 10px;
+}
+
+.chord-text {
+    padding-top: 20px;
+}
+

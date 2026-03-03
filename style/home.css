@@ -1,0 +1,76 @@
+/* TAGS */
+body {
+    min-height: 97vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-weight: 1000;
+}
+
+
+
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+figure img {
+    width: 200px; height: 200px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+figure img:hover {
+    transform: scale(1.05);
+}
+
+figcaption {
+    font-weight: 1000;
+}
+
+
+
+
+
+/* CLASSES */
+
+/*A seguir temos o nosso background de vídeo*/
+/*Aqui temos o background de vídeo*/
+.wallpaper { 
+    width: 100%; height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1; /* z-index faz com que a posição do item seja abaixo de todos os outros */
+}
+/*Aqui temos o background de vídeo*/
+
+.title {
+    display: flex;
+    position: fixed;
+    top: 10%;
+    pointer-events: none; 
+    /*Em "none", faz com que hovers funcionem
+    normalmente sem serem atrapalhados por uma caixa invisível*/
+}
+
+.title img {
+    width: 90px; height: 90px;
+}
+
+.chords-options {
+    display: flex;
+}
+
+
+

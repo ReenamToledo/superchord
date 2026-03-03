@@ -1,0 +1,133 @@
+/* TAGS */
+body {
+    min-height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+p {
+    color: white;
+}
+
+input {
+    padding: 0 0 0 15px; /*Muda a posição que começa a escrita dentro do input*/
+}
+
+input::placeholder {    /*Controla o nome dentro do input*/
+    padding: 0 0 0 0;    /*Muda a posição do nome dentro do input*/
+    color: white;   /*Muda a cor do nome dentro do input*/
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* CLASSES */
+
+/*A seguir temos o nosso background de vídeo*/
+/*Aqui temos o background de vídeo*/
+.wallpaper {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1; /* z-index faz com que a posição do item seja abaixo de todos os outros */
+}
+/*Aqui temos o background de vídeo*/
+
+.login-box { /* Aqui é a caixa da qual ficam todos os itens */
+    width: 400px; height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid white 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.title {
+    padding: 0 0 20px 0;
+    font-family: sans-serif;
+    font-weight: 1000;
+    color: white;
+}
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sign-in input {
+    width: 300px; height: 40px;
+    border: solid white 2px;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.username i  {
+    position: fixed;
+    bottom: 59.5%;
+    right: 40%;
+    color: white;
+}
+
+.password i  {
+    position: absolute;
+    bottom: 48.5%;
+    right: 40%;
+    color: white;
+}
+
+.memory {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.memory input {
+    cursor: pointer;
+}
+
+.login-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-button button {
+    width: 300px; height: 50px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 100px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: black;
+    color: white;
+}
