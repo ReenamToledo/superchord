@@ -5,6 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
+    background-color: black; /*Para voltar ao background de vídeo basta remover o background black*/
 }
 
 p {
