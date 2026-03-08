@@ -19,16 +19,25 @@ pre {
     font-family: sans-serif;
 }
 
-p, b {
+p, b, g, r {
     padding-left: 10px;
     margin: 0;
 }
 
 b {
+    font-weight: bold;
     color: blue;
 }
 
+g {
+    font-weight: bold;
+    color: #00C800;
+}
 
+r {
+    font-weight: bold;
+    color: red;
+}
 
 
 
@@ -74,7 +83,6 @@ b {
 }
 
 .singer_name {
-    color: blue;
     text-decoration: underline;
     padding-left: 10px;
 }
