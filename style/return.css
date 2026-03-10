@@ -5,9 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
-    background-color: black;
-    
-    /*Para voltar ao background de vídeo basta remover o background black*/
+    background-color: black; /*Para voltar ao background de vídeo basta remover o background black*/
 }
 
 h1 {
@@ -20,16 +18,12 @@ p {
 }
 
 input {
-    padding: 0 0 0 15px;
-    /*Muda a posição que começa a escrita dentro do input*/
+    padding: 0 0 0 15px; /*Muda a posição que começa a escrita dentro do input*/
 }
 
-input::placeholder {
-    /*Controla o nome dentro do input*/
-    padding: 0 0 0 0;
-    /*Muda a posição do nome dentro do input*/
-    color: white;
-    /*Muda a cor do nome dentro do input*/
+input::placeholder {    /*Controla o nome dentro do input*/
+    padding: 0 0 0 0;    /*Muda a posição do nome dentro do input*/
+    color: white;   /*Muda a cor do nome dentro do input*/
 }
 
 a {
@@ -50,20 +44,15 @@ a:hover {
 /*A seguir temos o nosso background de vídeo*/
 /*Aqui temos o background de vídeo*/
 .wallpaper {
-    width: 100%;
-    height: 100%;
+    width: 100%; height: 100%;
     object-fit: cover;
     position: fixed;
-    z-index: -1;
-    /* z-index faz com que a posição do item seja abaixo de todos os outros */
+    z-index: -1; /* z-index faz com que a posição do item seja abaixo de todos os outros */
 }
-
 /*Aqui temos o background de vídeo*/
 
-.login-box {
-    /* Aqui é a caixa da qual ficam todos os itens */
-    width: 400px;
-    height: 450px;
+.login-box { /* Aqui é a caixa da qual ficam todos os itens */
+    width: 400px; height: 380px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,37 +66,23 @@ a:hover {
     color: white;
     display: flex;
     align-items: flex-start;
-    padding-bottom: 50px;
-    pointer-events: none;
+    padding-bottom: 30px;
+    pointer-events: none; 
     /*Em "none", faz com que hovers funcionem
     normalmente sem serem atrapalhados por uma caixa invisível*/
 }
 
 .title img {
-    width: 90px;
-    height: 90px;
+    width: 90px; height: 90px;
 }
 
-.sign-in {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.sign-in input {
-    width: 300px;
-    height: 40px;
-    border: solid white 2px;
-    border-radius: 100px;
-    background-color: rgba(0, 0, 0, 0.2);
+.warning {
+    font-weight: 500;
     color: white;
 }
 
 .memory {
-    width: 80%;
-    padding: 20px;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,15 +93,16 @@ a:hover {
     cursor: pointer;
 }
 
-.login-button {
+.register {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
 }
 
-.login-button button {
-    width: 300px;
-    height: 50px;
+.register a {
+    width: 300px; height: 50px;
     font-size: large;
     display: flex;
     justify-content: center;
@@ -137,9 +113,10 @@ a:hover {
     border-radius: 100px;
     transition: 0.3s;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.login-button button:hover {
+.register a:hover {
     background-color: black;
     color: white;
     border: 1px solid white;

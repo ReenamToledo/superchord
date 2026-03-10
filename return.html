@@ -3,7 +3,7 @@
 
 <head>
     <link rel="shortcut icon" href="icons/Logotipo Cyberchord.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/return.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,37 +11,40 @@
 </head>
 
 <body>
-    
+
     <video autoplay muted loop class="wallpaper">
-        <source src="assets/forest_wallpaper_cyber_chord.mp4" type="video/mp4">
+        <source src="assets/sky-of-stars-moewalls-com.mp4" type="video/mp4">
     </video>
 
     <!-- Área da senha -->
-    <form class="login-box">
+    <div class="login-box">
 
         <div class="title">
-            <h1>Superchord </h1>
+            <h1>Superchord</h1>
+            <img src="icons/Logotipo Superchord.png" alt="">
         </div>
 
-        <!-- Área destinada as entradas do usuário -->
+        <!-- Área de senha incorreta -->
+        <div class="warning">
+            <h4>⚠️INCORRECT PASSWORD⚠️</h4>
+        </div>
+        <!-- Área de senha incorreta -->
 
         <!-- Área destinada a recuperar a senha -->
         <div class="memory">
             <a href="">Forgot password?</a>
+            <a href="index.html"> ⬅️ Go back</a>
         </div>
         <!-- Área destinada a recuperar a senha -->
 
-        <!-- Área destinada ao botão de login registro -->
-        <div class="login-button">
-            <a href="index.html">Go back</a>
+        <!-- Área destinada ao botão de registro -->
+        <div class="register">
+            <p>Don't have an account?</p>
+            <a type="submit" onclick="register()">Register</a>
         </div>
+        <!-- Área destinada ao botão de registro -->
 
-        <div>
-            <p>Don't have an account? <a href="">Register</a></p>
-        </div>
-        <!-- Área destinada ao botão de login registro -->
-
-    </form>
+    </div>
     <!-- Área da senha -->
 
     <script src="script/script.js"></script>
